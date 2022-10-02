@@ -100,28 +100,32 @@ ul {
     font-size: x-large;
 }
 
-.nav a {
+.nav > div {
+    position: relative;
     display: block;
     float: left;
     padding: 12px;
     text-align: center;
+}
+.nav a {
     color: black;
 }
 
 /* TODO: Pseudoelement millele siis border teha et joon oleks asjade vahel aga ei oska */
-/*.home:after {
-    content: "";
+.nav > div:not(:last-child)::after {
+    content: '';
     position: absolute;
-    height: 50%;
-    width: 1px;
+    right: 0;
     border-right: 1px solid black;
-}*/
-.nav a:hover {
+    top: 25%;
+    bottom: 10%;
+    height: 50%;
+}
+.nav > div:hover {
     background-color: rgb(187, 27, 27);
     transition: 0.7s;
     border-radius: 15px;
     color: black;
-    border-left: 1px solid black;
 }
 .header .user-logo {
     float: right;
