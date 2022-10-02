@@ -142,6 +142,9 @@ ul {
     overflow: none;
     
 }
+
+
+/* styling for the file selector button*/
 input::file-selector-button {
   font-weight: bold;
   color: white;
@@ -149,6 +152,24 @@ input::file-selector-button {
   border: thin solid grey;
   
 }
+/*styling the registration form and post form */
+.form-container {
+  margin: 20px auto;
+  display: block;
+  width: 300px;
+  text-align: center;
+  background-color: lightgray;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+.submit-button {
+  background: #0066A2;
+  color: white;
+  text-align: center;
+  text-shadow: none;
+  }
+
 
 
 /* Muidu on kaks halli fixed massi aga siis viskab ühe neist paremale poole */
