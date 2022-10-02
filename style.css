@@ -117,7 +117,8 @@ ul {
     border-right: 1px solid black;
 }*/
 .nav a:hover {
-    background-color: gray;
+    background-color: rgb(187, 27, 27);
+    transition: 0.7s;
     border-radius: 15px;
     color: black;
     border-left: 1px solid black;
@@ -139,7 +140,16 @@ ul {
     border-radius: 10px;
     position: fixed;
     overflow: none;
+    
 }
+input::file-selector-button {
+  font-weight: bold;
+  color: white;
+  padding: 0.5em;
+  border: thin solid grey;
+  
+}
+
 
 /* Muidu on kaks halli fixed massi aga siis viskab ühe neist paremale poole */
 .right {
