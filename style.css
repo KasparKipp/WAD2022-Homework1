@@ -163,7 +163,7 @@ input::file-selector-button {
   padding: 10px;
 
 }
-.submit-button {
+#submit-login {
   background: #0066A2;
   color: white;
   text-align: center;
