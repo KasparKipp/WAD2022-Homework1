@@ -136,16 +136,7 @@ ul {
     border-radius: 50%;
 }
 
-.sidemenu {
-    width: calc(20% - 10px);
-    height: 200px;
-    background-color: darkgray;
-    margin: 5px;
-    border-radius: 10px;
-    position: fixed;
-    overflow: none;
-    
-}
+
 
 
 /* styling for the file selector button*/
@@ -176,10 +167,7 @@ input::file-selector-button {
 
 
 
-/* Muidu on kaks halli fixed massi aga siis viskab ühe neist paremale poole */
-.right {
-    right:0;
-}
+
 
 footer {
     position: fixed;
@@ -194,4 +182,82 @@ footer {
 }
 footer {
     font-size: x-large;
+}
+
+/* Content area css */
+
+.left {
+  grid-area: leftside;
+  background-color: darkgray;
+  border-radius: 10px;
+}
+.centerdiv {
+  grid-area: center;
+  border-radius: 10px;
+}
+
+.right {
+  grid-area: rightside;
+  background-color: darkgray;
+  border-radius: 10px;
+}
+.content-area {
+  display: grid;
+  grid-template-areas: 'leftside center center center rightside';
+  grid-template-columns: 20% 1fr 1fr 1fr 20%;
+  gap: 10px;
+  margin: 10px 5px 66px 5px;
+  width: calc(100% - 10px);
+}
+
+.posts {
+  display: flex;
+  justify-content: space-around;
+  flex: row;
+  flex-wrap: wrap;
+}
+
+.user-post {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 300px;
+    max-width: 400px;
+    height: auto;
+    margin-top: 5px;
+    background-color: darkgray;
+    border-radius: 10px;
+    padding: 5px 2px;
+
+    flex: 0 1 99%;
+
+}
+
+@media screen and (max-width: 600px) {
+  .user-post {
+    flex: 0 1 48%;
+  }
+}
+
+.user-post-header{
+  position: relative;
+  padding: 5px;
+}
+
+.user-post-header img {
+  float: left;
+  border-radius: 50%;
+}
+.user-post-header p {
+  float: right;
+}
+.post-image img{
+  height: 200px;
+}
+.post-image {
+  height: 200px;
+}
+.user-post-footer {
+  width: auto;
+}
+.like-button{
+  width: auto;
 }
